@@ -4,519 +4,81 @@
 <title>Virtual CV</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
-    @media screen and (max-width:1020px){
-        .header a {
-        float: left;
-        display: block;
-        text-align: left;
-        text-decoration: none;
-        color: darkgoldenrod;}
-        
-    
-  
-      .header-right {
-        float: left;
-        
-    }
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: left;
-        display: block;
-        text-align: left;
-        text-decoration: none;
-        color: darkgoldenrod;}
-        
-    
-  
-      .header-right {
-        float: left;
-    }
-    
-    .header-right a{
-        text-decoration: none;
-        color: darkgoldenrod;}
-        
-    
-    
-    @media screen and (max-width: 500px){
-        .section1 p{
-            float: left;
-            display: block;
-            text-align: left;
-        }
-    }
-    
-    @media screen and (max-width: 500px){
-        .section1 a{
-            float: left;
-            display: block;
-        }
-    }
-     @media screen and (max-width: 500px){
-        .section1 p{
-            float: left;
-            display: block;
-            text-align: left;
-        }
-    }
-             .menu{
-            font-family: "lato", sans-serif;
-            text-transform: uppercase;
-            position: relative;
-            margin: 0 auto;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        
-        .menu ul{
-            list-style-type:none;
-            padding: 1px;
-            margin: 0;
-            
-        }
-        .menu li{
-            display: inline-block;
-            margin: 80px 0px 0px 190p;
-            align-items: center;
-            justify-content: center;
-            
-            
-        }
-        .menu a{
-            font-size: 10px;
-            font-weight: 400;
-            display: inline-block;
-            position: relative;
-            text-decoration: none;
-            color: #ffffff;
-            overflow: hidden;
-        }
-        .menu a span{
-            position: relative;
-            display: inline-block;
-            padding: 10px;
-            box-sizing: border-box;
-            height: 40px;
-            transition: top .5s ease-out;
-            top: 0;
-            animation-name: flip;
-            animation-duration: 2s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
-            
-        }
-        @keyframes flip{
-            0%{
-                color: floralwhite;}
-            25%{
-                color: darkgray;}
-            50%{
-                color:burlywood;}
-            75%{
-                color: darkgoldenrod;}
-            100%{
-                color: dimgrey;}
-        }
-
-        
-        .menu .default{
-            background-color: black;
-            border: 1px solid #555;
-            border-top-color:darkgoldenrod;
-            display: inline-block;
-        }
-        
-        .menu a:hover .default{
-            top: 41px;
-        }
-        .menu .over{
-            position: absolute;
-            left: 0;
-            top: -41px;
-            background-color: darkgoldenrod;
-            border: 1px solid darkgoldenrod;
-        }
-        .menu a:hover .over{
-            top: 0;
-        }
-      @media screen and (max-width:500px){
-        .section1 {
-            height: 50vh;
-        }
-        
-    }
-    .section1{
-        height: 100%;
-        width: 100%;
-    }
-    .heading2{
-            font-size: 18px;
-            font-weight: 400;
-            display: inline-block;
-            position: relative;
-            text-decoration: none;
-            color: black;
-            overflow: hidden;
-            text-align: center;
-            
-        }
-    .gold{
-            background-color: none;
-            border: 1px solid darkgoldenrod;
-            
-        }
-    .button{
-            font-size: 20px;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 10px;
-            padding: 10px 20px;
-            display: inline-block;
-            position: relative;
-            border-radius: 3px;
-            
-        }
-
-         .center-text{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-     .button{
-            font-size: 20px;
-            font-weight: 400;
-            text-decoration: none;
-            margin: 10px;
-            padding: 10px 20px;
-            display: inline-block;
-            position: relative;
-            border-radius: 3px;
-            
-        }
-        .button2 {
-            animation-name: flip;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-        }
-    .button.to-top{
-            color: white;
-            background-color: black;
-            padding: 5px 12px 5px 2px;
-            border-radius: 3px;
-            background-color: black;
-            border: 1px solid darkgoldenrod;
-        }
-    .button .arrows:before{
-            content:"\00BB";
-        }
-        .button .arrows{
-            font-size: 20px;
-            display: inline-block;
-            transform: rotate(270deg);
-            line-height: 20px;
-            vertical-align: middle;
-            margin-left: 7px;
-        }
-    .button1 a span{
-            animation-name: flash;
-            animation-duration: 2s;
-            animation-timing-function:ease-in-out;
-            animation-iteration-count:infinite;
-            
-        }
-    
-        @keyframes flash{
-            0%{
-                color: aliceblue;}
-            25%{
-                color: darkgray;}
-            50%{
-                color:burlywood;}
-            75%{
-                color: darkgoldenrod;}
-            100%{
-                color: dimgrey;}
-            
-        }
-   
-           footer{
-            background-color: dimgray;
-            color:black;
-            padding: 15px;
-        }
-    
-        .footer-menu{
-            list-style-type: none;
-            float: left;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .footer-menu li{
-            float: left;
-            margin: 5px 8px;
-        }
-        .footer-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-        }
-        .footer-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-        }
-        .social-menu{
-            list-style-type: none;
-            float: right;
-            margin: 10px 0;
-            padding: 0;
-        }
-        .social-menu li{
-            float: right;
-            margin: 5px 8px;
-            
-        }
-        .social-menu a{
-            text-transform: uppercase;
-            color: black;
-            text-decoration: none;
-            border-bottom: 2px solid darkgoldenrod;
-            transition: color 1s ease-out border, border-color 2s ease-out;
-            
-        }
-        .social-menu a:hover{
-            color: aliceblue;
-            border-color: aliceblue;
-            
-        }
-        footer p{
-            text-align: center;
-            
-            
-        }
-    p{
-        text-align: center;
-    }
-    
-    
-    
-    .url {
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.5);
-    }
-        
-    
-    img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
+	.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-    
-   
-    
-    
-   
-   
-    
-    
-    
-    
-</style>
-
-
-<body>
- <header>
-  <div class="header" style="overflow: hidden;
-  background-color: black;
-  padding: 20px 10px;"><img src="20210228_093058.png" style="float: left; width: 65px; display: inline-block;
-            border: 2px solid darkgoldenrod;
-            border-radius: 14px;
-"/>
-  <a href="#default" style="float: left;
-  color: darkgoldenrod;
+.header a {
+  float: left;
+  color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 25px; 
+  font-size: 18px; 
   line-height: 25px;
-  border-radius: 4px;">Grace Gardner</a>
-
-  <!--This is for the nav menu-->
-  <div class="header-right" style="float: right;">
-    <a href="#personal-statement" class="button2" style="border: 3px solid darkgoldenrod; background-color: dimgray; margin-top: 5px; padding: 10px;">Personal Statement</a>
-    <a href="#employment-history" class="button2" style="border: 3px solid darkgoldenrod; background-color: dimgray; margin-top: 5px; padding: 10px;">Employment History</a>
-    <a href="#education-certification" class="button2" style="border: 3px solid darkgoldenrod; background-color: dimgray; margin-top: 5px; padding: 10px;">Education/Certification</a>
-  </div>
-    
-     </div>
-</header>
-<section class="section1" style="background-color: black; background-image: url(header%20background4.jpg); height: 100vh; background-attachment: fixed; background-size: contain; background-repeat: no-repeat; background-position: center;">
-    <div> 
-        
-    </div>
-    
-</section>
-
-<section id="personal-statement" id="#personal-statement">
-    <div class="center-text">
-        <h2 class="heading2 gold">Personal Statement</h2>
-    </div>
-    <div class="center-text">
-        <p>I am friendly and sociable, always cheerful and optimistic. I enjoy meeting new people.  I'm always polite, courteous and helpful to others. I'm hardworking, reliable and trustworthy. I am highly organised, professional, self-motivated and a fast learner. I have exceptional work ethics and excellent communication and customer service skills. I am proficient in using Microsoft Office Suite. I am IT literate and fluent in two languages. I work well in a team and independently. I cope very well under pressure, always calm, focused, with a positive “can do” attitude.</p>
-    </div>
-    <div class="button1 center-text">
-        <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                            
-    </div>
-</section>
-
-<section style="height: 100vh;"></section>
-   
-
-<section id="employment-history" id="#employment-history">
-    <div class="center-text">
-        <h2 class="heading2 gold">Employment History</h2>
-    </div>
-    <div class="center-text">
-        <p>RESERVATIONS AGENT</p>
-    </div>
-    <p>MGALLERY CASTLE HOTEL WINDSOR<br>		January 2020 - present</p>			         
-    <p>CROWNE PLAZA/HOLIDAY INN EXPRESS T4<br>	              August 2018 - January 2020</p>			         
-    <p>Duties and responsibilities:</p>
-    <p>Checking arrivals lists, preparing and sending out confirmation letters and pro-forma invoices. Charging No\shows and late cancellations, checking and updating bookings on PMS and 3rd party Extranets, charging virtual cards. Updating commissionable bookings list. Responding to emails, actioning traces, posting/chasing advance deposits. Upselling, achieving Sales Targets and actively seeking for Sales Leads.</p>
-    <div class="center-text">
-        <p>HOTEL RECEPTIONIST</p>
-    </div>
-    <p>HOLIDAY INN ARIEL<br>			April 2017- August 2018</p>				           
-    <p>HILTON GARDEN INN<br>			March 2016 – March 2017</p>
-    <p>Duties and responsibilities:</p>
-    <p>To provide a warm welcome to guests’ and conference delegates’ and to attend to their requests and enquiries. Checking-in and checking-out guests efficiently and in timely manner. Ensuring that the billing instructions are followed up accordingly. Switchboard operation including directing calls and dealing with enquiries. Assisting the Night manager in running the Night Audit. Maximising the hotel’s occupancy/revenue through walk-in guests and upsells. To possess knowledge of the hotel’s amenities, services and the local area so that it can be passed on whenever the need arises.</p>
-    <div class="center-text">
-       <p>CASINO RECEPTIONIST</p>
-    </div>
-    <p>GENTING CASINOS<br>		November 2014 – October 2015</p>
-    <p>THE RITZ HOTEL & CASINO<br>	October 2013 – November 2014<p/>	
-    <p>GENTING CASINOS<br>		October 2010 – October 2013</p>
-    <p>THE SPORTSMAN CASINO<br>	May 2005 – October 2010</p>
-    <p>Duties and responsibilities:</p>
-    <p>To provide excellent customer service to club members and guests. To greet and welcome customers into the club and assist them with their needs. Ensure that current & new members’ details are entered into the database correctly and all relevant ID details are collected with accordance to the Gaming Act and the new Money Laundering Law. Face recognition and attention to detail is an essential skill to prevent undesirable and barred individuals from entering the club. To memorise and recognise VIP members and alert relevant departments and management upon their entry. To answer and transfer calls efficiently & professionally to the relevant department and/or persons. To ensure company polices are adhered to and complied with by members and their guests such as dress code and challenge 21 ID requirements.</p>
-        
-      
-
-    <div class="button1 center-text">
-        <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                            
-    </div>
-</section>
-
-<section style="height: 100vh;"></section>
-
-<section id="education-certification" id="#education-certification" style="height: 100vh;">
-    <div class="center-text">
-        <h2 class="heading2 gold">Education/Certification</h2>
-    </div>
-    <div class="center-text">
-        <ul style="list-style-type: none;">
-            <li>CAMBRIDGE KEY ENGLISH TEST ENTRY LEVEL 3 </li>
-            <li>GCSE CORE SUBJECTS PLUS MEDIA STUDIES & SPANISH</li>
-            <li>DBS CHECK Certificate Number 001004257030</li>
-            <li>University of Leeds and Institute of Coding<br>
-                <a href="https://www.futurelearn.com/certificates/itjxzh7" target="_blank">LEARN TO CODE FOR THE WEB</a>
-            </li>
-        </ul>
-    </div>
-    <div class="button1 center-text">
-        <a href="" class="button to-top" title="Back to top of page">
-                                <span class="arrows up"></span> <!--The Span is empty - it's because the content (which is the entity of ARROW BUTTON) is a CSS attribute. So where the span class .button .arrows is targeted, inside it, the content (arrow button code \00BB) is where it is added.-->                
-                        </a>
-                            
-    </div>
-</section>
-
-
- 
- 
-<footer>
-        <div class="content wide">
-            
-            <p class="final-note">&copy; 2021 Virtual-CV. All rights reserved.</p>
-        </div>
-    </footer>
+  border-radius: 4px;
   
-   
-    
-    
-    
-   
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-   
-     
-    
+}
 
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+ 
+}
+
+.header-right {
+  float: right;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+	
+</style>
+<body>
+	<head>
+		<div class="header">
+  			<a href="#grace-gardner" class="logo">Grace Gardner</a>
+  			
+  		<div class="header-right">
+    		<a class="active" href="#personal-statement">Personal Statement</a>
+    		<a href="#employment-history">Employment History</a>
+    		<a href="#education-certification">Education/Certification</a>
+    		<a href="#contact-details">Contact Details</a>
+  		</div>
+		</div>
+	</header>
+	
 </body>
 </html>
