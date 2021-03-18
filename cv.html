@@ -34,8 +34,24 @@
 }
 
 .header a.active {
+	animation-name: flip;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
  
 }
+@keyframes flip{
+            0%{
+                color: floralwhite;}
+            25%{
+                color: darkgray;}
+            50%{
+                color:burlywood;}
+            75%{
+                color: darkgoldenrod;}
+            100%{
+                color: dimgrey;}
+        }
 
 .header-right {
   float: right;
@@ -73,9 +89,9 @@
   			
   		<div class="header-right">
     		<a class="active" href="#personal-statement">Personal Statement</a>
-    		<a href="#employment-history">Employment History</a>
-    		<a href="#education-certification">Education/Certification</a>
-    		<a href="#contact-details">Contact Details</a>
+    		<a class="active" href="#employment-history">Employment History</a>
+    		<a class="active" href="#education-certification">Education/Certification</a>
+    		<a class="active" href="#contact-details">Contact Details</a>
   		</div>
 		</div>
 	</header>
